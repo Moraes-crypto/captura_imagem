@@ -43,11 +43,6 @@ def capturar_e_salvar():
 
             foto_invertida = cv2.cvtColor(frame_limpo, cv2.COLOR_RGB2BGR)
             cv2.imwrite("foto_invertida.jpg", foto_invertida)
-            
-            foto_legal = cv2.cvtColor(frame_limpo, cv2.COLORMAP_TURBO)
-            cv2.imwrite("foto_legal.jpg", foto_legal)
-            
-            
 
         elif tecla == 27:
             print("Encerramento câmera...")
